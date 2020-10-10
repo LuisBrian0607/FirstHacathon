@@ -48,7 +48,7 @@ function Factura(forma_pago){
       return this.subtotal()+this.IGV();
     }
 }
-let monto=new Factura(empresa_uno,cliente_uno,pedido1,'contado');
+let monto=new Factura('contado');
 console.log('Empresa :'+empresa_uno.nombre);
 console.log('Cliente es:'+cliente_uno.nombre);
 console.log('El pedido es:'+pedido1.descripcion);
